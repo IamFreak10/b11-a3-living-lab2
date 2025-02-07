@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B11-A3-LIVING-LAB-BY-MAHFUJ</title>
+    <!-- Daisy Ui+Tailwind CSS -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awsome -->
+    <script
+      src="https://kit.fontawesome.com/9f027279bb.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Importing Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .adlam-display {
+        font-family: "ADLaM Display", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+    <!-- Customization -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="adlam-display">
+    <!-- This Is Header Part -->
+    <header class="">
+      <nav class="hidden lg:inline">
+        <div class="navbar bg-[#FFF9F4] px-20">
+          <div class="navbar-start">
+            <div class="w-[48px] h-[48px]">
+              <img
+                class="w-full h-full object-contain"
+                src="c1-assets/logo-header.png"
+                alt=""
+              />
+            </div>
+
+            <div class="hidden lg:flex md:flex">
+              <a class="text-xl"
+                >Browse<span class="text-orange-400">4</span>Pets</a
+              >
+            </div>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Find a pet</a></li>
+              <li>
+                <a>Breeds</a>
+              </li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+          <div class="hidden lg:flex px-11 navbar-end gap-1">
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <button
+              class="btn btn-xs text-black font-normal btn-outline border border-yellow-300"
+            >
+              Login
+            </button>
+            <button class="btn btn-xs text-black font-normal bg-[#FFDC26]">
+              Register
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- Small Device Nav -->
+      <nav
+        class="flex justify-between items-center px-10 h-16 w-full lg:hidden bg-[#FFF9F4]"
+      >
+        <!-- logo -->
+        <div class="w-[48px] h-[48px]">
+          <img
+            class="w-full h-full object-contain"
+            src="c1-assets/logo-header.png"
+            alt=""
+          />
+        </div>
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-10 w-10"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-auto p-2 shadow"
+          >
+            <li><a>Find A Pet </a></li>
+            <li>
+              <a>Breeds</a>
+            </li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- This Is main part -->
+    <main class="mx-5 lg:mx-24 my-12">
+      <!-- Cat Section -->
+
+      <section
+        class="bg-none h-[44vh] md:h-[60vh] lg:h-screen lg:bg-[url('./c1-assets/cat-big.png')] lg:bg-cover bg-[70%_top] md:container mx-auto"
+      >
+        <!-- Text -->
+        <div class="absolute">
+          <h1 class="text-2xl lg:text-5xl">
+            Pamper Your Pet,<br />
+            Because They Deserve <br />the Best
+          </h1>
+          <p class="text-sm lg:text-xl text-gray-500 my-5">
+            Discover a world of treats, toys, and essentials handpicked for
+            <br />
+            your furry friends. Shop now and make tails wag with joy!
+          </p>
+          <button class="btn btn-xs text-black font-normal bg-[#FFDC26]">
+            Find a pet
+          </button>
+        </div>
+      </section>
+
+      <!-- Small ddevice Cat Section -->
+      <div class="absolute top-60 md:top-20 lg:hidden h-auto w-auto">
+        <div class="md:">
+          <img src="c1-assets/cat-big-removebg-preview.png" alt="" />
+        </div>
+      </div>
+
+      <!-- Browse By Categories -->
+      <section class="md:my-20">
+        <h1 class="text-2xl">Browse By Categories</h1>
+        <!--Card Container -->
+        <div class="grid grid-cols-2 lg:grid-cols-6 gap-5 items-center my-8">
+          <div
+            class="flex flex-col gap-3 items-center justify-center w-full h-[16rem] bg-[#F9DF8A] rounded-xl"
+          >
+            <div>
+              <img
+                class="rounded-full bg-white p-5"
+                src="c1-assets/dog-cartoon.png"
+                alt=""
+              />
+            </div>
+            <h1 class="text-2xl">Dog</h1>
+            <h3 class="text-sm">3 Items</h3>
+          </div>
+          <div
+            class="flex flex-col gap-3 items-center justify-center w-full h-[16rem] bg-[#F9DF8A] rounded-xl"
+          >
+            <div>
+              <img
+                class="rounded-full bg-white p-5"
+                src="c1-assets/fish-cartoon.png"
+                alt=""
+              />
+            </div>
+            <h1 class="text-2xl">Fish</h1>
+            <h3 class="text-sm">3 Items</h3>
+          </div>
+          <div
+            class="flex flex-col gap-3 items-center justify-center w-full h-[16rem] bg-[#F9DF8A] rounded-xl"
+          >
+            <div>
+              <img
+                class="rounded-full bg-white p-5"
+                src="c1-assets/cat-cartoon.png"
+                alt=""
+              />
+            </div>
+            <h1 class="text-2xl">Cat</h1>
+            <h3 class="text-sm">3 Items</h3>
+          </div>
+          <div
+            class="flex flex-col gap-3 items-center justify-center w-full h-[16rem] bg-[#F9DF8A] rounded-xl"
+          >
+            <div>
+              <img
+                class="rounded-full bg-white p-5"
+                src="c1-assets/bird-cartoon.png"
+                alt=""
+              />
+            </div>
+            <h1 class="text-2xl">Birs</h1>
+            <h3 class="text-sm">3 Items</h3>
+          </div>
+          <div
+            class="flex flex-col gap-3 items-center justify-center w-full h-[16rem] bg-[#F9DF8A] rounded-xl"
+          >
+            <div>
+              <img
+                class="rounded-full bg-white p-5"
+                src="c1-assets/mouse-cartoon.png"
+                alt=""
+              />
+            </div>
+            <h1 class="text-2xl">Small Pet</h1>
+            <h3 class="text-sm">3 Items</h3>
+          </div>
+          <div
+            class="flex flex-col gap-3 items-center justify-center w-full h-[16rem] bg-[#F9DF8A] rounded-xl"
+          >
+            <div>
+              <img
+                class="rounded-full bg-white p-5"
+                src="c1-assets/rabbit-cartoon.png"
+                alt=""
+              />
+            </div>
+            <h1 class="text-2xl">Rabit</h1>
+            <h3 class="text-sm">3 Items</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Trending Pet Products -->
+    <section
+      class="bg-hidden w-full lg:bg-[#FFF9F4] px-5 py-5 lg:py-24 lg:px-24"
+    >
+      <h1 class="text-2xl">Trending Pet Products</h1>
+      <div class="">
+        <!-- T Shirt -->
+        <div class="my-5">
+          <!-- T-Shirt For Dog -->
+          <div
+            class="bg-[#F9DF8A] w-full lg:w-1/4 h-[302px] rounded-lg px-5 py-5"
+          >
+            <h1 class="text-xl">T-Shirt For Dog</h1>
+            <p class="text-sm lg:text-xs text-gray-500 my-5">
+              Discover a worldd of treats,toys,and essebtials handpicked for
+            </p>
+            <button class="btn btn-sm text-black">Secondary</button>
+
+            <div class="relative w-1/2 md:w-[30%] lg:w-3/4 -top-16 -right-20">
+              <img
+                class="w-full md:w-3/4 lg:w-full"
+                src="c1-assets/cute-pet-mid.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Gadgets -->
+      </div>
+    </section>
+    <!-- This Footer part -->
+    <footer></footer>
+  </body>
+</html>
